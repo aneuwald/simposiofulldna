@@ -7,7 +7,6 @@ import loadingGif from '../assets/loading.gif'
 
 
 const url = process.env.REACT_APP_LOGIN_URL
-console.log(process.env)
 
 const LoginForm = ({ setInscritos }) => {
 
