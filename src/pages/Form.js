@@ -29,11 +29,11 @@ const Form = props => {
     if (nome.trim() === "")
       return alert('Por favor, insira o seu nome completo.')
 
-    if (email.trim() === "" || telefone.trim() === "")
+    if (email.trim() === "")
       return alert('Por favor, insira o seu email.')
 
-    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if (!re.test(email))
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (!re.test(email.trim()))
       return alert('E-mail parece estar incorreto.')
     
     if (profissao.trim() === "")
@@ -42,7 +42,7 @@ const Form = props => {
     if (telefone.trim() === "")
       return alert('Por favor, insira o seu número de WhatsAPP.')
 
-    if (telefone.length < 8)
+    if (telefone.trim().length < 8)
       return alert('Número de Whatsapp parece estar incorreto.')
 
     setLoadingSubmit(true)
