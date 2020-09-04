@@ -8,17 +8,18 @@ import buttonInscrevase from '../assets/buttonInscrevase.png'
 
 
 const HeaderHome = () => {
-        return(
-            <Container>
-                <img src={headerImg} alt="headerImg" />
-                <Link to="/inscricao">
-                    <img
-                        className="buttonInscrevase"
-                        src={buttonInscrevase}
-                        alt="buttonInscrevase" />
-                </Link>
-            </Container>
-        )
+    return (
+        <Container>
+            <img src={headerImg} alt="headerImg" />
+                <h1>AGRADECEMOS PELA PARTICIPAÇÃO NO NOSSO EVENTO!</h1>
+{/*             <Link to="/inscricao">
+                <img
+                    className="buttonInscrevase"
+                    src={buttonInscrevase}
+                    alt="buttonInscrevase" />
+            </Link> */}
+        </Container>
+    )
 }
 
 export default HeaderHome

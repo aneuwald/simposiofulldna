@@ -15,7 +15,7 @@ function App() {
         <Switch>
           <Route path="/" component={Agenda} exact />
           <Route path="/success" component={Success} exact />
-          <Route path="/inscricao" component={Form} exact />
+         {/*  <Route path="/inscricao" component={Form} exact /> */}
           <Route path="/admin" component={Admin} exact />
           <Redirect to='/' />
         </Switch>

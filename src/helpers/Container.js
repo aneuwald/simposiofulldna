@@ -22,6 +22,16 @@ const Container = styled.header`
         left: 5.5%;
     }
 
+    h1 {
+        display: block;
+        position: absolute;
+        top: 75%;
+        left: 5.5%;
+        color: rgb(242, 174, 78);
+        font-size: clamp(1px, 2.7vw, 21px);
+        text-shadow: 3px 3px 3px #0C2D40;
+    }
+
 `
 
 export default Container
